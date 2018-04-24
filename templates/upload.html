@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/static/css/style.css" type="text/css" rel="stylesheet" />
+    <link href="/static/css/styles-merged.css" type="text/css" rel="stylesheet" />
+    <link href="/static/css/style.min.css" type="text/css" rel="stylesheet" />
+ </head>
+
+ <body>
+   
+   <section class="probootstrap-hero prohttp://localhost/probootstrap/frame/#featuresbootstrap-slant" style="background-image: url(/static/img/car1.jpg);" data-section="home" data-stellar-background-ratio="0.5">
+     <div class="container" >
+       <div class="row intro-text">
+         <div class="col-md-14 text-center">
+           <h3 class="probootstrap-heading probootstrap-animate">Select images/folder to read the License Plate:</h3>
+           <div class="probootstrap-subheading center">
+            <form action="/upload" method="POST" enctype="multipart/form-data" name="uploadform" id="index-form">
+           <div id="content" style="background-color: light grey;">
+               <label for="files[]" style="color:black;margin-down:50px,margin-left:0px"></label>
+                   <input style= "position:relative;left:-50px;"type="file" name="file[]" id="files" multiple="" directory="" webkitdirectory="" mozdirectory="">
+           
+             <input style= "position:relative;height:50px;width:100px;left:100px;top:-40px;font-size:20px;background-color: #4CAF50;"   class="button" type="submit" value="Upload" />                
+           <a href="{{ url_for('index') }}" style="text-decoration:none;color:white"><h1><b><font size="30px"> Home</b></h1></a>
+   </div>
+
+       </form>
+             
+            </div>
+         </div>
+       </div>
+     </div>
+   </section>  
+
+   <script src="/static/js/scripts.min.js"></script>
+   <script src="/static/js/custom.js"></script>
+ </body>
+</html>
