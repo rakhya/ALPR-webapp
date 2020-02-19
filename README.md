@@ -12,6 +12,6 @@ Pre-Requisites:
 9.	pip install pytesseract
 
 Running the app:
-Open CMD 
-cd into the application folder
-run python ALPRapp.py
+1.	Open CMD 
+2.	cd into the application folder
+3.	run python ALPRapp.py
